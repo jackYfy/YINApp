@@ -1,0 +1,267 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="toolbarStyle">@style/MyToolbar</item>
+
+    </style>
+
+    <style name="MyToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+    <!-- ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="AppTheme.AppBarOverlay">
+        <item name="actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
+        <item name="android:textSize">14sp</item> <!--  搞掂字体大小-->
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <!--<item name="android:colorBackground">#000000</item> 也可以设置背景色以及menu中的其他属性-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">6dp</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">6dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/white</item>
+
+    </style>
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown"></style>
+
+    <style name="Transparent" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="TitleTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorTitle</item>
+    </style>
+
+    <!--blueTheme-->
+    <style name="BlueTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
+        <item name="colorAccent">@color/colorBluePrimaryDark</item>
+        <item name="menuBackground">@drawable/blue_background</item>
+        <item name="md_title_color">@color/colorBluePrimary</item>
+        <item name="md_link_color">@color/colorBluePrimary</item>
+        <item name="md_positive_color">@color/colorBluePrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--redTheme-->
+    <style name="RedTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorRedPrimary</item>
+        <item name="colorPrimaryDark">@color/colorRedPrimaryDark</item>
+        <item name="colorAccent">@color/colorRedPrimaryDark</item>
+        <item name="menuBackground">@drawable/red_background</item>
+        <item name="md_title_color">@color/colorRedPrimary</item>
+        <item name="md_link_color">@color/colorRedPrimary</item>
+        <item name="md_positive_color">@color/colorRedPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--brownTheme-->
+    <style name="BrownTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBrownPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBrownPrimaryDark</item>
+        <item name="colorAccent">@color/colorBrownPrimaryDark</item>
+        <item name="menuBackground">@drawable/brown_background</item>
+        <item name="md_title_color">@color/colorBrownPrimary</item>
+        <item name="md_link_color">@color/colorBrownPrimary</item>
+        <item name="md_positive_color">@color/colorBrownPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+    <!--greenTheme-->
+    <style name="GreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorGreenPrimaryDark</item>
+        <item name="menuBackground">@drawable/green_background</item>
+        <item name="md_title_color">@color/colorGreenPrimary</item>
+        <item name="md_link_color">@color/colorGreenPrimary</item>
+        <item name="md_positive_color">@color/colorGreenPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--purpleTheme-->
+    <style name="PurpleTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorPurplePrimaryDark</item>
+        <item name="menuBackground">@drawable/purple_background</item>
+        <item name="md_title_color">@color/colorPurplePrimary</item>
+        <item name="md_link_color">@color/colorPurplePrimary</item>
+        <item name="md_positive_color">@color/colorPurplePrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--tealTheme-->
+    <style name="TealTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorTealPrimary</item>
+        <item name="colorPrimaryDark">@color/colorTealPrimaryDark</item>
+        <item name="colorAccent">@color/colorTealPrimaryDark</item>
+        <item name="menuBackground">@drawable/teal_background</item>
+        <item name="md_title_color">@color/colorTealPrimary</item>
+        <item name="md_link_color">@color/colorTealPrimary</item>
+        <item name="md_positive_color">@color/colorTealPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--pinkTheme-->
+    <style name="PinkTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPinkPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPinkPrimaryDark</item>
+        <item name="colorAccent">@color/colorPinkPrimaryDark</item>
+        <item name="menuBackground">@drawable/pink_background</item>
+        <item name="md_title_color">@color/colorPinkPrimary</item>
+        <item name="md_link_color">@color/colorPinkPrimary</item>
+        <item name="md_positive_color">@color/colorPinkPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--deepPurpleTheme-->
+    <style name="DeepPurpleTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDeepPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepPurplePrimaryDark</item>
+        <item name="menuBackground">@drawable/deep_purple_background</item>
+        <item name="md_title_color">@color/colorDeepPurplePrimary</item>
+        <item name="md_link_color">@color/colorDeepPurplePrimary</item>
+        <item name="md_positive_color">@color/colorDeepPurplePrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--orange-->
+    <style name="OrangeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorOrangePrimaryDark</item>
+        <item name="menuBackground">@drawable/orange_background</item>
+        <item name="md_title_color">@color/colorOrangePrimary</item>
+        <item name="md_link_color">@color/colorOrangePrimary</item>
+        <item name="md_positive_color">@color/colorOrangePrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--indigo-->
+    <style name="IndigoTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorIndigoPrimary</item>
+        <item name="colorPrimaryDark">@color/colorIndigoPrimaryDark</item>
+        <item name="colorAccent">@color/colorIndigoPrimaryDark</item>
+        <item name="menuBackground">@drawable/indigo_background</item>
+        <item name="md_title_color">@color/colorIndigoPrimary</item>
+        <item name="md_link_color">@color/colorIndigoPrimary</item>
+        <item name="md_positive_color">@color/colorIndigoPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--cyan-->
+    <style name="CyanTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorCyanPrimary</item>
+        <item name="colorPrimaryDark">@color/colorCyanPrimaryDark</item>
+        <item name="colorAccent">@color/colorCyanPrimaryDark</item>
+        <item name="menuBackground">@drawable/cyan_background</item>
+        <item name="md_title_color">@color/colorCyanPrimary</item>
+        <item name="md_link_color">@color/colorCyanPrimary</item>
+        <item name="md_positive_color">@color/colorCyanPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--lightGreen-->
+    <style name="LightGreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorLightGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLightGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorLightGreenPrimaryDark</item>
+        <item name="menuBackground">@drawable/light_green_background</item>
+        <item name="md_title_color">@color/colorLightGreenPrimary</item>
+        <item name="md_link_color">@color/colorLightGreenPrimary</item>
+        <item name="md_positive_color">@color/colorLightGreenPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--lime-->
+    <style name="LimeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorLimePrimary</item>
+        <item name="colorPrimaryDark">@color/colorLimePrimaryDark</item>
+        <item name="colorAccent">@color/colorLimePrimaryDark</item>
+        <item name="menuBackground">@drawable/lime_background</item>
+        <item name="md_title_color">@color/colorLimePrimary</item>
+        <item name="md_link_color">@color/colorLimePrimary</item>
+        <item name="md_positive_color">@color/colorLimePrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--deepOrange-->
+    <style name="DeepOrangeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDeepOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepOrangePrimaryDark</item>
+        <item name="menuBackground">@drawable/deep_orange_background</item>
+        <item name="md_title_color">@color/colorDeepOrangePrimary</item>
+        <item name="md_link_color">@color/colorDeepOrangePrimary</item>
+        <item name="md_positive_color">@color/colorDeepOrangePrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--blueGrey-->
+    <style name="BlueGreyTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBlueGreyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlueGreyPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueGreyPrimaryDark</item>
+        <item name="menuBackground">@drawable/blue_grey_background</item>
+        <item name="md_title_color">@color/colorBlueGreyPrimary</item>
+        <item name="md_link_color">@color/colorBlueGreyPrimary</item>
+        <item name="md_positive_color">@color/colorBlueGreyPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="RedTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="RedTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="color_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+</resources>

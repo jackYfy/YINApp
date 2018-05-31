@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="80dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_gank_item_bg"
+    android:foreground="?selectableItemBackground"
+    >
+
+
+
+        <ImageView
+            android:id="@+id/port_id"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_spot"/>
+        <ImageView
+            android:id="@+id/main_item_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/port_id"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:src="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:id="@+id/main_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/main_item_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            android:text="基于 UITableView 实现的更灵活的单页布局.(代码家)"/>
+
+
+    <!--是否收藏-->
+    <ImageView
+        android:id="@+id/collected_content"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@+id/who_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_not_collected_128"
+        />
+    <TextView
+        android:id="@+id/who_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:drawablePadding="5dp"
+        android:textSize="12sp"
+        tools:text="22222"
+        />
+</RelativeLayout>

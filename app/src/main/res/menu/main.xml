@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_1"
+        android:orderInCategory="100"
+        android:title="分享"
+        android:icon="@mipmap/set1"
+        app:showAsAction="withText|never"
+        />
+    <item
+        android:id="@+id/action_2"
+        android:orderInCategory="110"
+        android:title="关于"
+        android:icon="@mipmap/set2"
+        app:showAsAction="withText|never" />
+    <item
+        android:id="@+id/action_3"
+        android:orderInCategory="120"
+        android:title="版本"
+        android:icon="@mipmap/set3"
+        app:showAsAction="withText|never"/>
+    <item
+        android:id="@+id/action_4"
+        android:orderInCategory="130"
+        android:title="时间"
+        android:icon="@mipmap/set4"
+        app:showAsAction="withText|never" />
+</menu>
