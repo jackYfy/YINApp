@@ -102,8 +102,8 @@ public class MainActivity extends BaseActivityCopy implements NavigationView.OnN
         //注册EventBus
         EventBus.getDefault().register(this);
         ininData();
-        //分支测试
-        //ceshi2
+        //分支测试第二次
+
     }
 
     private void setDrawer() {
