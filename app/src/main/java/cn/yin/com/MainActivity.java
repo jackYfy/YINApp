@@ -1,7 +1,6 @@
 package cn.yin.com;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Build;
@@ -103,6 +102,7 @@ public class MainActivity extends BaseActivityCopy implements NavigationView.OnN
         //注册EventBus
         EventBus.getDefault().register(this);
         ininData();
+        //分支测试
     }
 
     private void setDrawer() {
