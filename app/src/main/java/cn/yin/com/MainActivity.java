@@ -103,6 +103,7 @@ public class MainActivity extends BaseActivityCopy implements NavigationView.OnN
         EventBus.getDefault().register(this);
         ininData();
         //分支测试
+        //ceshi2
     }
 
     private void setDrawer() {
