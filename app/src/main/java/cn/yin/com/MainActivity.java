@@ -47,6 +47,7 @@ import cn.yin.com.interfaces.TodayRecommInterface;
 import cn.yin.com.listenr.OnClickLintener;
 import cn.yin.com.tools.PermissionUtil;
 import cn.yin.com.ui.AllClassActivity;
+import cn.yin.com.ui.BootMusicdActivity;
 import cn.yin.com.ui.MeiziImgActivity;
 import cn.yin.com.ui.SelectDateActivity;
 import cn.yin.com.ui.ThemeActivity;
@@ -230,6 +231,7 @@ public class MainActivity extends BaseActivityCopy implements NavigationView.OnN
         } else if (id == R.id.nav_meizi) {
             startActivity(new Intent(this,MeiziImgActivity.class));
         } else if (id == R.id.nav_collect) {
+            startActivity(new Intent(this, BootMusicdActivity.class));
             Toast.makeText(getApplicationContext(), "第4", Toast.LENGTH_SHORT).show();
         }else if (id == R.id.nav_theme) {
             startActivity(new Intent(this,ThemeActivity.class));
